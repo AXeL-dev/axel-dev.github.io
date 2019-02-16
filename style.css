@@ -272,7 +272,7 @@ footer a.li:hover {
 	transition: all 0.5s ease;
 }
 footer a.gh:hover {
-	opacity: 0.8;
+	opacity: 0.9;
 	transition: all 0.5s ease;
 }
 footer a.yt:hover {
@@ -280,7 +280,7 @@ footer a.yt:hover {
 	transition: all 0.5s ease;
 }
 footer a.gm:hover {
-	color: #e64522;
+	color: #2196f3;
 	transition: all 0.5s ease;
 }
 
