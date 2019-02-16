@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<title>AXeL-dev</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="AXeL-dev is a full stack developer." />
+	<meta name="keywords" content="AXeL-dev, developer, Morocco, css, html, jQuery, PHP, user experience, user interface" />
+	<meta name="author" content="AXeL-dev" />
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+	<script src="jquery.min.js"></script>
+	<link rel="stylesheet" href="font-awesome.min.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+</head>
+<body>
+
+<main class="container">
+	<section class="content">
+		<h1>AXeL-dev</h1>
+		<p id="desc"></p>
+		<a href="https://axel-dev.github.io/portfolio/" title="Portfolio">My Portfolio</a>
+	</section>
+</main>
+
+<footer>
+	<a class="gh" href="https://github.com/AXeL-dev" title="My Github"><span class="icon-github"></span></a>
+	<a class="yt" href="https://www.youtube.com/channel/UCctMROLcvkiqpOyF98_WUYg" title="My Youtube Channel"><span class="icon-youtube"></span></a>
+	<a class="gm" href="mailto:contact.axel.dev@gmail.com" title="Contact Me"><span class="icon-mail"></span></a>
+</footer>
+
+<script>
+var showText = function (target, message, index, interval) {
+	if (index < message.length) {
+		$(target).append(message[index++]);
+		setTimeout(function () { showText(target, message, index, interval); }, interval);
+	}
+}
+$(function () {
+	showText("#desc", "Full Stack Developer", 0, 100);
+});
+</script>
+</body>
+</html>
