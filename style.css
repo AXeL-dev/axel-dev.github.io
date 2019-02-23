@@ -27,13 +27,13 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	-moz-osx-font-smoothing: grayscale;
 }
 .icon-youtube:before {
+	content: "\e902";
+}
+.icon-gitlab:before {
 	content: "\e900";
 }
-.icon-mail:before {
-	content: "\ea86";
-}
 .icon-github:before {
-	content: "\eab0";
+	content: "\e901";
 }
 
 /***** General Styles *****/
@@ -272,15 +272,15 @@ footer a.li:hover {
 	transition: all 0.5s ease;
 }
 footer a.gh:hover {
-	opacity: 0.9;
+	color: #333;
+	transition: all 0.5s ease;
+}
+footer a.gl:hover {
+	color: #e24329;
 	transition: all 0.5s ease;
 }
 footer a.yt:hover {
-	color: #bb0000;
-	transition: all 0.5s ease;
-}
-footer a.gm:hover {
-	color: #2196f3;
+	color: #ff0000;
 	transition: all 0.5s ease;
 }
 
